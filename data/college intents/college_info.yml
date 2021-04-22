@@ -1,0 +1,34 @@
+version: "2.0"
+nlu:
+- intent: college_info
+  examples: |
+    - Tell me about ABES
+    - Tell me about ABES
+    - What is the ranking of ABES in aktu
+    - What is the national ranking of aktu
+    - What accreditation does ABES currently have
+    - What are the undergraduate and postgraduate programmes offered by ABES
+    - Which of its branches are NBA accredited
+    - What is the procedure to get admission in ABES
+    - What is the fee structure of btech 1st yr/ or any other programme
+    - What facilities are available in college campus (like auditorium, cafeteria, cricket ground, swimming pool)
+    - What type of labs are available to the students
+    - How many clubs and societies do ABES have
+    - Explain about these clubs
+    - Tell me something about the yearly techno-cultural fest of ABES
+    - Do ABES has any special department ? Ccpd and entrepreneurship cell
+    - Does ABES has ragging culture?
+    - Is there counselling facility available in the campus?
+    - Other medical facilities available in campus
+    - What is the attendance policy and culture practiced in ABES
+    - Documents necessary for the admission processes
+    - How is the placement scenario at ABES
+    - Is there any specific placement policy in culture 2lpa diff
+    - How many companies visit campus each year
+    - What is the avg package of xyz branch student
+    - Which companies are the mass recruiters at ABES
+    - Which companies offer the top packages at ABES
+    - Highest package year wise
+    - Branch wise placement stats in percentage
+    - No. Of seats available in each branch
+    - How many exams are conducted each semester internally

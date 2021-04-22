@@ -5,9 +5,12 @@ intents:
   - goodbye
   - affirm
   - deny
+  - react_positive
+  - thank
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - out_of_scope
 
 responses:
   utter_greet:
@@ -23,11 +26,27 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_positive:
+    - text: "Thanks ya, have a nice day :)"
+
+  utter_out_of_scope:
+    - text: "Sorry, I didn't get that 🤷. Could you please rephrase?"
+    - text: "I didn't understand, could you rephrase that?"
+    - text: "I'm sorry, but I didn't understand you. Could you please rephrase what you just said?"
+    - text: "I'm afraid I didn't get what you just said. Could you rephrase that?"
+    - text: "I didn't quite get that, could you rephrase your message?"
+    - text: "Could you rephrase your message? I didn't get it, I'm sorry."
+
   utter_goodbye:
   - text: "Bye"
+  - text: "Goodbye!"
+  - text: "Bye :)"
+  - text: "Ciao!"
+  - text: "Bye, was nice talking to you!"
+  - text: "Bye bye!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a Gabby, powered by Rasa."
 
 session_config:
   session_expiration_time: 60
