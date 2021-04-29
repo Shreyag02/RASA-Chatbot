@@ -1,29 +1,34 @@
 version: "2.0"
 nlu:
 - intent: admission_info
-  examples: 
+  examples: |
     - b.tech admission
     - admission
     - adddmisin
     - admisin
     - admsn
     - admisssion
-    - criteria of admission
-    - what is the criteria of admission
-    - criteria
-    - critria
+    
     - what is the minimum percentage of getting admission in CSE
     - what is the minimum percentage of getting admission in cse
     - what is the minimum number of getting admission in CSE
+    
+    
+
+- intent : programs
+    examples: |
     - What are the programs offered?
+    - what are the programs offered?
+    - programs
+    - prgrams
+    - how many programs offered?
     - programs offered?
     - programs?
 
 
 
-
 - intent : branch_info
-  examples:
+  examples: |  
     - how many branches are there?
     - number of branches?
     - name of branches
@@ -33,12 +38,45 @@ nlu:
     - brnch
 
 
+- intent : eligibility_regular
+  examples: |
+     - eligibility
+     - criteria of admission
+     - what is the criteria of admission
+     - criteria
+     - critria
+     - eligibility criteria
+     - elgbity
+     - eligibility
+     - eligblity
+     - elblity
+     - elgblty
+     - elgigibilityy
+  
 
+  - intent : eligibility_lateral
+    examples: |
+     - eligibility lateral
+     - criteria of admission lateral
+     - what is the criteria of lateral admission 
+     - criteria lateral
+     - critria lateral
+     - eligibility criteria lateral
+     - elgbity lateral
+     - eligibility lateral
+     - eligblity lateral
+     - elblity lateral
+     - elgblty lateral
+     - elgigibilityy lateral
+     - eligibility lateral
+     - eligibility ltral 
+     - eligibility lateral
+     - eligibility lteral
 
 
 
  - intent: fee_info
-   examples:
+   examples: |
       - what is the fee structure
       - what is the fee structure?
       - fee structure
@@ -85,7 +123,7 @@ nlu:
 
 
 intent : hostel_info
-  examples:
+  examples: |
    - hostel_fee
    - hostel_fees
    - hostel fee
@@ -104,7 +142,7 @@ intent : hostel_info
    
 
 
-   
+
 
 
 

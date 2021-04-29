@@ -40,3 +40,37 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: admission
+  steps:
+  - intent: admission_info
+  - action: utter_admission_info
+  - action: utter_admission_info
+  - intent: programs
+  - action: utter_programs
+
+story: eligibility_criteria_regular
+  steps:
+  - intent: eligibility_regular
+  - action: utter_ eligibility_regular
+
+story: eligibility_criteria_lateral
+  steps:
+  - intent: eligibility_lateral
+  - action: utter_ eligibility_lateral
+
+story: admission_process
+  steps:
+  - intent: admission_process
+  - action: utter_admission_process
+
+
+story: fees process
+  steps:
+  - intent: fee_info
+  - action: utter_fee_info
+
+
+
+
+  

@@ -11,6 +11,12 @@ intents:
   - mood_unhappy
   - bot_challenge
   - out_of_scope
+  - admission_info
+  - programs
+  - eligibility_regular
+  - eligibility_lateral
+  - admission process
+  - fee_info
 
 responses:
   utter_greet:
@@ -47,6 +53,27 @@ responses:
 
   utter_iamabot:
   - text: "I am a Gabby, powered by Rasa."
+
+  utter_admission_info:
+  - text: "Do you want you want to know about admission ?"
+  - text: "what do  you want to know about admission ?"
+
+  utter_programs:
+  - text: "Here are the programs offered - B.Tech , M.tech , MBA , MCA"
+
+  utter_ eligibility_regular:
+  - text: "https://www.abes.ac.in/admissions/b-tech/eligibility/"
+
+   utter_ eligibility_lateral:
+  - text: "https://www.abes.ac.in/admissions/b-tech/eligibility-lateral/" 
+  
+  utter_addmision_process:
+  - text: "click on the link for the process - https://www.abes.ac.in/admissions/b-tech/admission-process/"
+
+
+  utter_fee_info:
+  - text: "Here is the fee info - https://www.abes.ac.in/fees-structure-2020/"
+
 
 session_config:
   session_expiration_time: 60
