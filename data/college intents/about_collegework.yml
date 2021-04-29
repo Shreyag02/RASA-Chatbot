@@ -1,0 +1,138 @@
+version: "2.0"
+
+nlu:
+- intent: forms
+  examples: |
+    - can I get from
+    - where can I get forms
+    - do you have  any form
+    - give me forms
+    - Form No. S- 52
+    - Alumni Membership Form
+    - Form No. S- 51
+    - No Dues Form
+    - S_11- Re- Ex- student
+    - Registration Form
+    - Form S- 39
+    - Form No. S- 27
+    - Form No. S- 26
+    - Bank Challan Form
+    - Form S-26
+    - Permission for participating in TF- Cult- sports
+    - Form S-29
+    - Form S-28
+    - Form S-27
+    - Form No. S2
+    - Income Tax Rebate
+    - Form No. S 46
+    - Indemnity Form
+    - Form No. S-18
+    - Refund/ Adjust Excess Amount
+    - Application for Financial Assistance from Benevolent Fund
+    - Form No. 2
+    - Application For Providing Tution Fee Details
+    - Form No. S54
+    - Transfer Certificate
+    - Form No. S 53
+    - Provisional Certificate
+    - Form No. S 52
+    - Alumni Membership Form
+    - Form No. S 51
+    - No Dues Form
+    - Form No. S 38
+    - Hostel Registration Form
+    - Form No. S 34
+    - Undertaking by Parents
+    - Form No. S 32
+    - Application for Collection of Pending Degrees or Marksheets
+    - Form No. S 31
+    - Discrepancy in Marksheet
+    - Form No. S 30
+    - Hostel Admission Withdrawal
+    - Form No. S 25
+    - Student Appear in Sessional Pre Univ. Exam
+    - Form No. S 24
+    - Feedback Form
+    - Form No. S 23
+    - Revised Hostel Security Refund
+    - Form No. S 22
+    - Form of Reward for Securing 75% Above Marks
+    - Form No. S 19
+    - Final Academic Fee Installment
+    - Form No. S 14
+    - Application for HTL Admission Old Students
+    - Form No. S 12
+    - Branch Change
+    - Form No. S 17
+    - Hostel Withdrawal Mid Sem 33
+    - Form No. S 14
+    - Application for HTL Admission Old Students
+    - Form No. S 12
+    - Branch Change
+    - Form No. S 10
+    - Railway Concession Form
+    - Form No. S 3
+    - Education Loan
+    - Form No. S 1
+    - Bonafide Certificate
+    - Form S-29
+    - Form S-26
+    - Permission for participating in TF- Cult- sports
+
+
+- intent: alumini
+  examples: |
+    - alumini
+    - almuni
+    - alamuni
+    - what is AAA
+    - aaa
+    - AAA
+    - what is alumini association
+    - do you have any alumini page
+    - who are alumini
+    - Im alumini
+    - take me to alumini portal
+    - alumini portal
+    - Alumini Portal
+    - ALUMINI PORTAL
+    - show me alumini portal
+    - where is alumini portal
+    - is there any portal for alumini
+    - how is alumini portal
+    - alumini k liye kya kia hai
+    - special for alumini
+    - ALUMINI
+    - Alumini
+    - show alumini
+    - ABESEC Alumni Association
+    - abesec alumini association kya hai
+    - what is ABESEC Alumni Association
+    - aluini what
+    - alumini what was
+    - show me alumini
+    - what have you done for alumini
+    - anything for alumini ?
+    - alumini ???
+    - alumini kon hote hai
+    - alumini ka kya scene hai
+    - is there anything for alumini
+    -
+
+- intent: career
+  examples: |
+
+- intent: students_counselling
+  examples: |
+
+- intent: antiragging
+  examples: |
+
+- intent: Medical
+  examples: |
+
+- intent: Brochure
+  examples: |
+
+- intent: scholarship
+  examples: |

@@ -1,7 +1,7 @@
 version: "2.0"
 nlu:
 - intent: admission_info
-  examples: 
+  examples: |
     - b.tech admission
     - admission
     - adddmisin
@@ -20,10 +20,8 @@ nlu:
     - programs?
 
 
-
-
 - intent : branch_info
-  examples:
+  examples: |
     - how many branches are there?
     - number of branches?
     - name of branches
@@ -33,12 +31,8 @@ nlu:
     - brnch
 
 
-
-
-
-
  - intent: fee_info
-   examples:
+   examples: |
       - what is the fee structure
       - what is the fee structure?
       - fee structure
@@ -85,7 +79,7 @@ nlu:
 
 
 intent : hostel_info
-  examples:
+  examples: |
    - hostel_fee
    - hostel_fees
    - hostel fee
