@@ -40,3 +40,101 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: admission
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: admission_info
+  - action: utter_admission_info
+
+- story: programs
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: programs
+  - action: utter_programs
+
+- story: eligibility_criteria_regular
+  steps:
+  - intent: eligibility_regular
+  - action: utter_ eligibility_regular
+  - intent: eligibility_lateral
+  - action: utter_ eligibility_lateral
+
+- story: eligibility_criteria_lateral
+  steps:
+  - intent: eligibility_lateral
+  - action: utter_ eligibility_lateral
+  - intent: eligibility_regular
+  - action: utter_ eligibility_regular
+
+- story: fees process
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fee_info
+  - action: utter_fee_info
+
+- story: hostel info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_info
+  - action: utter_hostel_info
+
+- story: form
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: forms
+  - action: utter_forms
+
+- story: aluminii
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: alumini
+  - action: utter_alumini
+
+- story: careerr
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: career
+  - action: utter_career
+
+- story: students counselling
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: students_counselling
+  - action: utter_students_counselling
+
+- story: anti ragging
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: antiragging
+  - action: utter_antiragging
+
+- story: Medical
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: medical
+  - action: utter_medical
+
+- story: Brochure
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: brochure
+  - action: utter_brochure
+
+- story: scholar ship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: scholarship
+  - action: utter_scholarship

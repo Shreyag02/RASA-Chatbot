@@ -25,7 +25,38 @@ intents:
     use_entities: true
 - out_of_scope:
     use_entities: true
-
+- admission_info:
+    use_entities: true
+- programs:
+    use_entities: true
+- branch_info:
+    use_entities: true
+- eligibility_regular:
+    use_entities: true
+- eligibility_lateral:
+    use_entities: true
+- fee_info:
+    use_entities: true
+- hostel_info:
+    use_entities: true
+- forms:
+    use_entities: true
+- alumini:
+    use_entities: true
+- career:
+    use_entities: true
+- students_counselling:
+    use_entities: true
+- antiragging:
+    use_entities: true
+- medical:
+    use_entities: true
+- brochure:
+    use_entities: true
+- scholarship:
+    use_entities: true
+- college_info:
+    use_entities: true
 entities:
 - company
 - name
@@ -34,21 +65,15 @@ entities:
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
-
+  - text: Hey! How can I help?
   utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-
+  - text: Please dont be sad, Smile suits on your face
   utter_did_that_help:
   - text: Did that help you?
-
   utter_happy:
   - text: Great, carry on!
-
   utter_positive:
   - text: Thanks ya, have a nice day :)
-
   utter_out_of_scope:
   - text: Sorry, I didn't get that 🤷. Could you please rephrase?
   - text: I didn't understand, could you rephrase that?
@@ -56,7 +81,6 @@ responses:
   - text: I'm afraid I didn't get what you just said. Could you rephrase that?
   - text: I didn't quite get that, could you rephrase your message?
   - text: Could you rephrase your message? I didn't get it, I'm sorry.
-
   utter_goodbye:
   - text: Bye
   - text: Goodbye!
@@ -64,9 +88,39 @@ responses:
   - text: Ciao!
   - text: Bye, was nice talking to you!
   - text: Bye bye!
-
   utter_iamabot:
   - text: I am a Gabby, powered by Rasa.
+  utter_admission_info:
+  - text: Thank you for showing intrest in ABESEC, you can proceed to https://www.abes.ac.in/admissions/
+  - text: Let me have a look, click https://www.abes.ac.in/admissions/ for details
+  utter_programs:
+  - text: Here are the programs offered - B.Tech , M.tech , MBA , MCA
+  utter_ eligibility_regular:
+  - text: https://www.abes.ac.in/admissions/b-tech/eligibility/
+  utter_ eligibility_lateral:
+  - text: https://www.abes.ac.in/admissions/b-tech/eligibility-lateral/
+  utter_fee_info:
+  - text: Here is the fee info - https://www.abes.ac.in/fees-structure-2020/
+  utter_hostel_info:
+  - text: Im Sorry I can't reach right now, I will surely do that in future
+  utter_forms:
+  - text: Sure !, you can find this form here -> https://www.abes.ac.in/about-us/notices-circulars/forms/
+  utter_alumini:
+  - text: Welcome to out Alumini portal, for more details visit https://www.abes.ac.in/alumni/
+  utter_career:
+  - text: Thank you so much for showing your intrest in ABESEC, for jobs visit https://www.abes.ac.in/careers/
+  utter_students_counselling:
+  - text: ABESEC has constituted Student Counseling Cell to look after the problems of students. Students can discuss their problem, of any nature with our counselor, Contact our counsellor Ms. Ankita Juneja (ankita.juneja@abes.ac.in)
+  utter_antiragging:
+  - text: We are proud to inform that ABESEC is a Ragging free Institution, To know more about Antiragging cell go to https://www.abes.ac.in/lifeabes-ec/anti-ragging-cell/
+  utter_medical:
+  - text: The institute runs a dispensary and has appointed a doctor who is available for consultation during institute hours on all working days from 10:30 am -01:30 pm. Contact Dr. R.K. Goel(0120-2845112)
+  - text: for Medical Assistance, visit https://www.abes.ac.in/lifeabes-ec/medical-services/
+  utter_brochure:
+  - text: You can download latest copy of brochure from https://www.abes.ac.in/abes-brochure-2020-21/
+  utter_scholarship:
+  - text: For any query related to scholarship you can contact to registrar office
+  - text: For scholarship details visit https://scholarship.up.gov.in/
 actions: []
 forms: {}
 e2e_actions: []

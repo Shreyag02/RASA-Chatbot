@@ -6,21 +6,30 @@ nlu:
     - admission
     - adddmisin
     - admisin
+    - how to get admission at abesec
+    - can i get admission at abesec
+    - what is admission procedure
     - admsn
     - admisssion
-    - criteria of admission
-    - what is the criteria of admission
-    - criteria
-    - critria
     - what is the minimum percentage of getting admission in CSE
     - what is the minimum percentage of getting admission in cse
     - what is the minimum number of getting admission in CSE
-    - What are the programs offered?
-    - programs offered?
-    - programs?
 
 
-- intent : branch_info
+- intent: programs
+  examples: |
+      - what courses do you provide ?
+      - What are the programs offered?
+      - what are the programs offered?
+      - programs
+      - prgrams
+      - how many programs offered?
+      - programs offered?
+      - programs?
+
+
+
+- intent: branch_info
   examples: |
     - how many branches are there?
     - number of branches?
@@ -31,8 +40,45 @@ nlu:
     - brnch
 
 
- - intent: fee_info
-   examples: |
+- intent : eligibility_regular
+  examples: |
+     - eligibility
+     - criteria of admission
+     - what is the criteria of admission
+     - criteria
+     - critria
+     - eligibility criteria
+     - elgbity
+     - eligibility
+     - eligblity
+     - elblity
+     - elgblty
+     - elgigibilityy
+  
+
+- intent : eligibility_lateral
+  examples: |
+     - eligibility lateral
+     - criteria of admission lateral
+     - what is the criteria of lateral admission 
+     - criteria lateral
+     - critria lateral
+     - eligibility criteria lateral
+     - elgbity lateral
+     - eligibility lateral
+     - eligblity lateral
+     - elblity lateral
+     - elgblty lateral
+     - elgigibilityy lateral
+     - eligibility lateral
+     - eligibility ltral 
+     - eligibility lateral
+     - eligibility lteral
+
+
+
+- intent: fee_info
+  examples: |
       - what is the fee structure
       - what is the fee structure?
       - fee structure
@@ -78,7 +124,7 @@ nlu:
       - ce fees
 
 
-intent : hostel_info
+- intent : hostel_info
   examples: |
    - hostel_fee
    - hostel_fees
@@ -98,7 +144,7 @@ intent : hostel_info
    
 
 
-   
+
 
 
 
