@@ -14,6 +14,11 @@ stories:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
+- story: I am a bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
 - story: happy path 2
   steps:
   - intent: greet
@@ -41,6 +46,13 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: tell me a joke
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telljoke
+  - action: utter_telljoke
+
 - story: admission
   steps:
   - intent: greet
@@ -55,19 +67,26 @@ stories:
   - intent: programs
   - action: utter_programs
 
-- story: eligibility_criteria_regular
+- story: branch info
   steps:
-  - intent: eligibility_regular
-  - action: utter_ eligibility_regular
-  - intent: eligibility_lateral
-  - action: utter_ eligibility_lateral
+  - intent: greet
+  - action: utter_greet
+  - intent: branch_info
+  - action: utter_branch_info
 
-- story: eligibility_criteria_lateral
+- story: check regular eligibility
+  steps:
+  - intent: eligibility_regular
+  - action: utter_eligibility_regular
+  - intent: eligibility_lateral
+  - action: utter_eligibility_lateral
+
+- story: check LE eligibility
   steps:
   - intent: eligibility_lateral
-  - action: utter_ eligibility_lateral
+  - action: utter_eligibility_lateral
   - intent: eligibility_regular
-  - action: utter_ eligibility_regular
+  - action: utter_eligibility_regular
 
 - story: fees process
   steps:
@@ -83,21 +102,21 @@ stories:
   - intent: hostel_info
   - action: utter_hostel_info
 
-- story: form
+- story: get forms
   steps:
   - intent: greet
   - action: utter_greet
   - intent: forms
   - action: utter_forms
 
-- story: aluminii
+- story: alumini info
   steps:
   - intent: greet
   - action: utter_greet
   - intent: alumini
   - action: utter_alumini
 
-- story: careerr
+- story: career info
   steps:
   - intent: greet
   - action: utter_greet
@@ -138,3 +157,257 @@ stories:
   - action: utter_greet
   - intent: scholarship
   - action: utter_scholarship
+
+- story: top companies
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: top_company
+  - action: utter_top_company
+
+- story: highest packages
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: highest_package
+  - action: utter_highest_package
+
+- story: Mass recruiter of abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mass_recruiter
+  - action: utter_mass_recruiter
+
+- story: Btech placement record
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement_record_btech
+  - action: utter_placement_record_btech
+
+- story: MBA placement record
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement_record_mba
+  - action: utter_placement_record_mba
+
+- story: MCA placement record
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement_record_mca
+  - action: utter_placement_record_mca
+
+- story: why should i chose abses
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: why_abes_for_placement
+  - action: utter_why_abes_for_placement
+
+- story: average package
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: average_package
+  - action: utter_average_package
+
+- story: Types of company
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: company_type
+  - action: utter_company_type
+
+- story: About ABES engineering college
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_college
+  - action: utter_about_college
+
+- story: Where is ABES engineering college
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: where_is_abes
+  - action: utter_where_is_abes
+
+- story: Sports in abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abes_sports
+  - action: utter_abes_sports
+
+- story: TEDxABESEC
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ted
+  - action: utter_ted
+
+- story: Genero abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: genero
+  - action: utter_genero
+
+- story: Library abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: library
+  - action: utter_library
+
+- story: HUHC
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: huhc
+  - action: utter_huhc
+
+- story: canteen
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: canteen
+  - action: utter_canteen
+
+- story: occation in abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: occasion
+  - action: utter_occasion
+
+- story: clubs in abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: clubs
+  - action: utter_clubs
+
+- story: Details of abesec classroom and halls etc
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infrastr
+  - action: utter_infrastr
+
+- story: Details of abesec labs
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: labs
+  - action: utter_labs
+
+- story: Photographs of abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: photos
+  - action: utter_photos
+
+- story: lakshya academy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lakshya
+  - action: utter_lakshya
+
+- story: college virtual tour
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: virtual_tour
+  - action: utter_virtual_tour
+
+- story: academic calender
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: academic_calender
+  - action: utter_academic_calender
+
+- story: Internal Quality Assurance Cell
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: iqaf
+  - action: utter_iqaf
+
+- story: National Institutional Ranking Framework
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nirf
+  - action: utter_nirf
+
+- story: SWAYAM-NPTEL
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nptel
+  - action: utter_nptel
+
+- story: Centre of Excellence for Teaching and Learning
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cetl
+  - action: utter_cetl
+
+- story: HR portal abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hr_portal
+  - action: utter_hr_portal
+
+- story: Publications in abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: publication
+  - action: utter_publication
+
+- story: SIM login
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sim
+  - action: utter_sim
+
+- story: contact us
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contactus
+  - action: utter_contactus
+
+- story: innovation at abesec
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: innovation
+  - action: utter_innovation
+
+- story: my creater
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: father
+  - action: utter_father
+
+
+
+
+
+
+
+
+

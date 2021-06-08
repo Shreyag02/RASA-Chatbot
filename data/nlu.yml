@@ -147,6 +147,11 @@ nlu:
     - howdy
     - i am [Karen Mease](name)
     - jojojo
+    - namaste
+    - namaskaar
+    - ji namaste
+    - shat shat naman
+    - NAMASTE
     - jop
     - konichiwa
     - merhaba
@@ -1210,3 +1215,37 @@ nlu:
     - sudo reboot
     - asdfgasd
     - asdfgasdas
+- intent: telljoke
+  examples: |
+    - tell me a joke
+    - ek joke sunao yaar
+    - hey gabby ek joke pless
+    - gabby joke
+    - oke
+    - joke sunao
+    - joke suna yaar
+    - sing a joke
+    - one joke pless
+    - some jokes
+    - tel funny joke
+    - could you tell me a joke?
+    - please give me a funny
+    - know any good puns?
+    - give me a wisecracker
+    - tell me of a good antic
+    - tell me a joke
+    - no, i want to hear a joke
+    - tell me another joke
+    - give me another one
+    - give me a good  joke
+    - give me another joke
+    - oke, make me laugh one more time
+    - make me laugh
+    - tell me a joke!
+    - bhai ek joke
+    - gabby make me laugh
+    - makee me laaf
+    - jokessss pless
+    - jakes
+    - say joke
+    - pani wali joke
