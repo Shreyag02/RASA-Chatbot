@@ -638,7 +638,7 @@ nlu:
     - this sucks
     - very bad
     - I do not need help installing
-    - I don't wanna tell the name of my company
+    - I don't wanna tell the name of my college
     - no stop
     - stop it, i do not care!!!
     - none of them
@@ -861,7 +861,7 @@ nlu:
     - Can you please send me an uber
     - Do I have to accept?
     - Do you know [Kevin Pelton](name)
-    - Find nearest [pizzahut](company)
+    - Find nearest [pizzahut](college)
     - Have we met before?
     - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
     - How long does it take to set up a Rasa bot?
@@ -1070,7 +1070,7 @@ nlu:
     - pizza
     - please help with my ice cream it's dripping
     - please hjave lunchj
-    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big college
     - please play music
     - rasa topics
     - really? you're so touchy?
@@ -1249,3 +1249,213 @@ nlu:
     - jakes
     - say joke
     - pani wali joke
+
+- intent: ask_abuse_reply
+  examples: |
+    - why will you block me?
+    - that's so rude
+    - hey! how dare you say that!
+    - you can't do that
+    - oh! that's mean
+    - I will make your complaint
+    - why?
+
+- intent: abuse_bot
+  examples: |
+    - [fuckOff](abuse)
+    - you are of no use [sucker](abuse)
+    - [sucker](abuse) bot I have ever seen
+    - you are [dumb](abuse)
+    - you [sucks](abuse)
+    - go [fuck yourself](abuse)
+    - you're [dumb](abuse)!
+    - I think your intelligence is [bullshit](abuse)!
+    - Oh come on, as if it hurts you!
+    - Feelings!, you're a bot and bots don't have feeling you [bitch](abuse)
+    - Why not, you stupid [asshole](abuse)
+    - As if I care, you ain't even real so just [FuckOFf](abuse)
+    - You're are ugly!
+    - WTF?!
+    - [fuck off](abuse)
+    - FUCK
+    - Fuck
+    - Fuck Off
+    - Fuck off
+    - Fuck u
+    - Fuck you
+    - God you're a moron
+    - I can't believe how dumb you are
+    - I hate you
+    - Loser
+    - Stupid
+    - You are a fool.
+    - You are an idiot.
+    - You are dumb.
+    - You are shortsighted.
+    - You are unintelligent.
+    - You are unknowing.
+    - You brain is dull.
+    - You have no brains.
+    - You have no intelligence.
+    - You have no sense.
+    - You know nothing.
+    - You lack intelligence.
+    - You lack understanding.
+    - You're a dolt.
+    - You're a dunce.
+    - You're an idiot.
+    - You're foolish.
+    - Your intelligence is laughable.
+    - Your mindset is naive.
+    - a baby knows more than you
+    - are u dump?
+    - are you brain dead?
+    - asshole
+    - bitch
+    - bloody dunce
+    - but you are idiot
+    - deal with my ass, you bitch
+    - f*ck
+    - fuck
+    - fuck off
+    - fuck rasa
+    - fuck u
+    - fuck you
+    - fuck you machine learning bot
+    - fuck you T-Rex
+    - fuck you!
+    - fucking stupid
+    - fucking work
+    - get lost
+    - go away
+    - go fuck yourself
+    - go to hell
+    - how can you be such an idiot?
+    - i hate you
+    - i hate your dumb face
+    - i think that you're a bullshit
+    - idiot
+    - insult you
+    - ok fuck you
+    - ok shut up
+    - T-Rex you look like a burnt sparrow
+    - shit
+    - shit bot
+    - shut up asshole
+    - so dumb
+    - so fucking dumb
+    - sucker
+    - that wasn't very funny
+    - thta was a terrible fucking joke
+    - u r a piece of junk
+    - ur a pussy
+    - what fuck
+    - yep but you are idiot
+    - you are a moron
+    - you are a stupid bot
+    - you are an idiot
+    - you are dumb
+    - you are fucking stupid
+    - you are fucking stupid guy！
+    - you are idiot
+    - you are idiotic
+    - you are so ignorant
+    - you are stupid
+    - you are unintelligent
+    - you are useless bot
+    - you asshole
+    - you idiot
+    - you idiot bot
+    - you son of a bitch
+    - you suck
+    - you're a loser lmao
+    - you're an idiot
+    - you're dumb
+    - you're not smart
+    - you're so dumb
+    - you're the most moronic person I know
+    - your mom gay
+    - you are annoying
+    - F u
+    - monkey man
+    - little ugly monkey
+    - you are ugly
+    - you are insane
+    - why are ugly
+    - why are you ugly
+    - your crazy
+    - stupid rasa
+    - damn you
+    - wtf
+    - you suck!
+    - run away
+    - wtf ?
+    - are u fool or an idiot
+    - fucck you
+
+- intent: regret_abuse_reply
+  examples: |
+    - oops!!
+    - oh! sorry!
+    - I was just kidding man!
+    - hey, that's was just a joke!
+    - I didn't mean it
+    - ok sorry!
+    - I'm kidding
+    - Don't take it personal
+    - ok! I'll behave buddy!
+
+- intent: ask_bot_name
+  examples: |
+    - are you a bot?
+    - are you a chatbot?
+    - are you [abes'](college) chatbot?
+    - are you [abes'](college) bot?
+    - am I talking to a bot?
+    - am I talking to [abes'](college) chatbot?
+    - am I talking to [abes'](college) bot?
+    - is this a bot I am talking too?
+    - is this a [abes'](college) bot I am talking too?
+    - is this a [abes'](college) chatbot I am talking too?
+    - am I talking to bot?
+    - are you [google](college)'s bot?
+    - Ar you a bot ?
+    - Are you a bot
+    - Are you a chat bot?
+    - Are you the bot?
+    - Hi there, are you the bot?
+    - are you a BOT
+    - are you a Skynet ?
+    - are you a bot
+    - are you a bot ?
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+    - are you a human?
+
+

@@ -8,6 +8,8 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: thank
+  - action: utter_ask_anything_else
 
 - story: Out of scope
   steps:
@@ -25,6 +27,8 @@ stories:
   - action: utter_greet
   - intent: react_positive
   - action: utter_positive
+  - intent: thank
+  - action: utter_ask_anything_else
 
 - story: sad path 1
   steps:
@@ -46,75 +50,195 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: tell me a joke
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: thank
+  - action: utter_ask_anything_else
+
+- story: tell me a joke (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: telljoke
   - action: utter_telljoke
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: admission
+- story: tell me a joke (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: telljoke
+  - action: utter_telljoke
+  - intent: deny
+  - action: utter_goodbye
+
+- story: admission (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: admission_info
   - action: utter_admission_info
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: programs
+- story: admission (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: admission_info
+  - action: utter_admission_info
+  - intent: deny
+  - action: utter_goodbye
+
+- story: programs (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: programs
   - action: utter_programs
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: branch info
+- story: programs (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: programs
+  - action: utter_programs
+  - intent: deny
+  - action: utter_goodbye
+
+- story: branch info (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: branch_info
   - action: utter_branch_info
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: check regular eligibility
+- story: branch info (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branch_info
+  - action: utter_branch_info
+  - intent: deny
+  - action: utter_goodbye
+
+- story: check regular eligibility (happy path)
   steps:
   - intent: eligibility_regular
   - action: utter_eligibility_regular
   - intent: eligibility_lateral
   - action: utter_eligibility_lateral
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: check LE eligibility
+- story: check regular eligibility (sad path)
+  steps:
+  - intent: eligibility_regular
+  - action: utter_eligibility_regular
+  - intent: eligibility_lateral
+  - action: utter_eligibility_lateral
+  - intent: deny
+  - action: utter_goodbye
+
+- story: check LE eligibility (happy path)
   steps:
   - intent: eligibility_lateral
   - action: utter_eligibility_lateral
   - intent: eligibility_regular
   - action: utter_eligibility_regular
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: fees process
+- story: check LE eligibility (sad path)
+  steps:
+  - intent: eligibility_lateral
+  - action: utter_eligibility_lateral
+  - intent: eligibility_regular
+  - action: utter_eligibility_regular
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fees process (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: fee_info
   - action: utter_fee_info
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: hostel info
+- story: fees process (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fee_info
+  - action: utter_fee_info
+  - intent: deny
+  - action: utter_goodbye
+
+- story: hostel info (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: hostel_info
   - action: utter_hostel_info
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: get forms
+- story: hostel info (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_info
+  - action: utter_hostel_info
+  - intent: deny
+  - action: utter_goodbye
+
+- story: get forms (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: forms
   - action: utter_forms
+  - intent: thank
+  - action: utter_ask_anything_else
 
-- story: alumini info
+- story: get forms (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: forms
+  - action: utter_forms
+  - intent: deny
+  - action: utter_goodbye
+
+- story: alumini info (happy path)
   steps:
   - intent: greet
   - action: utter_greet
   - intent: alumini
   - action: utter_alumini
+  - intent: thank
+  - action: utter_ask_anything_else
+
+- story: alumini info (sad path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: alumini
+  - action: utter_alumini
+  - intent: deny
+  - action: utter_goodbye
 
 - story: career info
   steps:
@@ -284,12 +408,20 @@ stories:
   - intent: occasion
   - action: utter_occasion
 
-- story: clubs in abesec
+- story: clubs in abesec path 1
   steps:
   - intent: greet
   - action: utter_greet
   - intent: clubs
   - action: utter_clubs
+  - action: action_clubs
+
+- story: clubs in abesec path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: clubs
+  - action: action_clubs
 
 - story: Details of abesec classroom and halls etc
   steps:
@@ -402,6 +534,25 @@ stories:
   - action: utter_greet
   - intent: father
   - action: utter_father
+
+- story: my creater (abuse path)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abuse_bot
+  - action: utter_abuse_reply
+
+- story: abuse path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abuse_bot
+  - action: utter_abuse_reply
+
+- story: abuse path 2
+  steps:
+  - intent: abuse_bot
+  - action: utter_abuse_reply
 
 
 

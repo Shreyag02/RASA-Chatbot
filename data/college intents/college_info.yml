@@ -398,28 +398,28 @@ nlu:
     - do your clubs host any event
     - name all the society
     - sari ke sari society k naam chaiye muje
-    - tell me about Creative U Club
-    - tell me about Cultural Club
-    - tell me about Environ Club
-    - tell me about Minerva-The Literary Club
-    - tell me about NSS Club
-    - tell me about Pelicula-The Movie Club
-    - tell me about Picturesque Club
-    - tell me about SAMVAAD Theatre-Dramatics Club
-    - tell me about Spicmacay Club
-    - tell me about Spirituality and Yoga Club
-    - tell me about Student Publication Club-AAGAZ
-    - Creative U Club
-    - Cultural Club
-    - Environ Club
-    - Minerva-The Literary Club
-    - NSS Club
-    - Pelicula-The Movie Club
-    - Picturesque Club
-    - SAMVAAD Theatre-Dramatics Club
-    - Spicmacay Club
-    - Spirituality and Yoga Club
-    - Student Publication Club-AAGAZ
+    - tell me about [Creative U](club) Club
+    - tell me about [Cultural](club) Club
+    - tell me about [Environ](club) Club
+    - tell me about [Minerva-The Literary](club) Club
+    - tell me about [NSS](club) Club
+    - tell me about [Pelicula-The Movie](club) Club
+    - tell me about [Picturesque](club) Club
+    - tell me about [SAMVAAD Theatre-Dramatics](club) Club
+    - tell me about [Spicmacay](club) Club
+    - tell me about [Spirituality and Yoga](club) Club
+    - tell me about [Student Publication Club-AAGAZ](club)
+    - [Creative U](club) Club
+    - [Cultural](club) Club
+    - [Environ](club) Club
+    - [Minerva-The Literary](club) Club
+    - [NSS](club) Club
+    - [Pelicula-The Movie](club) Club
+    - [Picturesque](club) Club
+    - [SAMVAAD Theatre-Dramatics](club) Club
+    - [Spicmacay](club) Club
+    - [Spirituality and Yoga](club) Club
+    - [Student Publication Club-AAGAZ](club)
 
 
 - intent: infrastr

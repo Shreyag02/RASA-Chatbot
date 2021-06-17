@@ -6,81 +6,157 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - greet:
+    use_entities: true
 - goodbye:
+    use_entities: true
 - affirm:
+    use_entities: true
 - react_positive:
+    use_entities: true
 - deny:
+    use_entities: true
 - thank:
+    use_entities: true
 - mood_great:
+    use_entities: true
 - mood_unhappy:
+    use_entities: true
 - bot_challenge:
+    use_entities: true
 - out_of_scope:
+    use_entities: true
 - telljoke:
+    use_entities: true
 - admission_info:
+    use_entities: true
 - programs:
+    use_entities: true
 - branch_info:
+    use_entities: true
 - eligibility_regular:
+    use_entities: true
 - eligibility_lateral:
+    use_entities: true
 - fee_info:
+    use_entities: true
 - hostel_info:
+    use_entities: true
 - forms:
+    use_entities: true
 - alumini:
+    use_entities: true
 - career:
+    use_entities: true
 - students_counselling:
+    use_entities: true
 - antiragging:
+    use_entities: true
 - medical:
+    use_entities: true
 - brochure:
+    use_entities: true
 - scholarship:
+    use_entities: true
 - top_company:
+    use_entities: true
 - highest_package:
+    use_entities: true
 - mass_recruiter:
+    use_entities: true
 - placement_record_btech:
+    use_entities: true
 - placement_record_mba:
+    use_entities: true
 - placement_record_mca:
+    use_entities: true
 - why_abes_for_placement:
+    use_entities: true
 - average_package:
+    use_entities: true
 - company_type:
+    use_entities: true
 - about_college:
+    use_entities: true
 - where_is_abes:
+    use_entities: true
 - abes_sports:
+    use_entities: true
 - ted:
+    use_entities: true
 - genero:
+    use_entities: true
 - library:
+    use_entities: true
 - huhc:
+    use_entities: true
 - canteen:
+    use_entities: true
 - occasion:
+    use_entities: true
 - clubs:
+    use_entities: true
 - infrastr:
+    use_entities: true
 - labs:
+    use_entities: true
 - photos:
+    use_entities: true
 - lakshya:
+    use_entities: true
 - virtual_tour:
+    use_entities: true
 - academic_calender:
+    use_entities: true
 - iqaf:
+    use_entities: true
 - nirf:
+    use_entities: true
 - nptel:
+    use_entities: true
 - cetl:
+    use_entities: true
 - hr_portal:
+    use_entities: true
 - publication:
+    use_entities: true
 - sim:
+    use_entities: true
 - contactus:
+    use_entities: true
 - innovation:
+    use_entities: true
 - father:
-
-
+    use_entities: true
+- regret_abuse_reply:
+    use_entities: true
+- ask_bot_name:
+    use_entities: true
+- ask_abuse_reply:
+    use_entities: true
+- abuse_bot:
+    use_entities: true
 entities:
-- company
+- club
 - name
-- product
 - language
-slots: {}
+- company
+- product
+- college
+- abuse
+slots:
+  club:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_greet:
   - text: Hey! How can I help?
   utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
   - text: Please dont be sad, Smile suits on your face
   utter_did_that_help:
-  - text: Did that help you?
+  - image: https://i.imgur.com/nGF1K8f.jpg
   utter_happy:
   - text: Great, carry on!
   utter_positive:
@@ -103,9 +179,8 @@ responses:
   - text: I am a Gabby, powered by Rasa.
   utter_telljoke:
   - text: Your life is a joke. Hahaha !
-
   utter_admission_info:
-  - text: Thank you for showing intrest in ABESEC, you can proceed to https://www.abes.ac.in/admissions/
+  - text: Thank you for showing intrest in ABESEC, you can proceed to https://www.abes.ac.in/admissions
   - text: Let me have a look, click https://www.abes.ac.in/admissions/ for details
   utter_programs:
   - text: Here are the programs offered - B.Tech , M.tech , MBA , MCA
@@ -121,7 +196,6 @@ responses:
   utter_hostel_info:
   - text: Exhilarated hostel facility is offered for students at ABES Engineering College with the capacity of 1500 students in boy’s hostels and 600 students in girl’s hostel with conducive and homely environment.
   - text: ABESEC has separate hostels for girls and boys, click here for details https://www.abes.ac.in/admissions/accommodation/
-
   utter_forms:
   - text: Sure !, you can find this form here -> https://www.abes.ac.in/about-us/notices-circulars/forms/
   utter_alumini:
@@ -140,7 +214,6 @@ responses:
   utter_scholarship:
   - text: For any query related to scholarship you can contact to registrar office
   - text: For scholarship details visit https://scholarship.up.gov.in/
-
   utter_top_company:
   - text: Adobe, Amazon, Cisco, toppr and extramarks etc. are some of the top recruiter
   utter_highest_package:
@@ -162,7 +235,6 @@ responses:
   - text: Average package for B.tech is 3.50 LPA and for MBA it is 5.11 LPA :)
   utter_company_type:
   - text: There are many types of companies but IT comapnies and marketing companies are main
-
   utter_about_college:
   - text: ABESEC is the leading institution in AKTU. Read more here https://www.abes.ac.in/about-us/
   - text: ABESEC has achieved excellence in academics by consistently securing the First position for consecutively 8 semesters in University academic result. Read more... https://www.abes.ac.in/about-us/
@@ -196,7 +268,6 @@ responses:
   - text: To get Geotagged Photographs of Classrooms, Tutorial Rooms, Seminar Halls etc. Click here https://www.abes.ac.in/life-at-abesec/academic-infrastructure/geotagged/
   utter_lakshya:
   - text: Lakshya Officer’s Defence Academy is being established in ABESEC with the aim of imparting pre selection coaching for SSB interview to candidates aspiring to join Armed Forces as an officer. For more https://www.abes.ac.in/lifeabes-ec/lakshya-officers-defence-academy/
-
   utter_virtual_tour:
   - text: To take virtual tour of ABESEC click here https://www.seeinside.link/catalog/721b2af1d50e4704b30e/ABES-Engineering-College.html
   utter_academic_calender:
@@ -204,7 +275,7 @@ responses:
   utter_iqaf:
   - text: The Internal Quality Assurance Cell (IQAC) of ABESEC was established in 2014 with a motive to engrain quality culture in the Institution. For complete details click here https://www.abes.ac.in/iqac/
   utter_nirf:
-  - text:  The National Institutional Ranking Framework (NIRF) was approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015. click here for more details https://www.abes.ac.in/nirf/
+  - text: The National Institutional Ranking Framework (NIRF) was approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015. click here for more details https://www.abes.ac.in/nirf/
   utter_nptel:
   - text: SWAYAM NPTEL is a programme initiated by Government of India. The objective of this effort is to take the best teaching learning resources to all. click here for more details https://www.abes.ac.in/swayam-nptel/
   - text: To look for NPTEL Certifications visit https://www.abes.ac.in/academics/departments/under-graduate/mechanical-engineering/nptel/
@@ -223,7 +294,19 @@ responses:
   - text: Click https://www.abes.ac.in/innovations/ to visit innovation
   utter_father:
   - text: I'm Gabby created by Shrusty, Shreya, Pratyusha and Prashant :P
-
-actions: []
+  utter_ask_anything_else:
+  - text: No worries. Let me know if there is anything else I can help you with
+  - text: No problem, anything else I can help with?
+  - text: Happy to serve you {userName}, do you want me to do anything else?
+  - text: No worries. Is there anything else I can help you with?
+  utter_abuse_reply:
+  - text: Hey! that's not fair
+  - text: Please, I have feelings too!
+  - text: If you don't stop this, I've to report you!
+  - text: If you don't stop this, I'll block you!!
+  - text: Don't talk to me like that!
+  - text: that's not very nice
+actions:
+- action_clubs
 forms: {}
 e2e_actions: []
