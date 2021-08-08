@@ -182,7 +182,7 @@ nlu:
     - show jobs
     - show vacancy
 
-- intent: students_counselling
+- intent: students_counsellingw
   examples: |
     - mental health issues
     - mental health of student

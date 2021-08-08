@@ -1278,6 +1278,7 @@ nlu:
     - WTF?!
     - [fuck off](abuse)
     - FUCK
+    - bosdik
     - Fuck
     - Fuck Off
     - Fuck off
@@ -1338,7 +1339,7 @@ nlu:
     - insult you
     - ok fuck you
     - ok shut up
-    - T-Rex you look like a burnt sparrow
+    - you look like a burnt sparrow
     - shit
     - shit bot
     - shut up asshole
@@ -1459,3 +1460,6 @@ nlu:
     - are you a human?
 
 
+
+
+# THIS ABOVE INTENT IS NOT IN USE

@@ -135,6 +135,8 @@ intents:
     use_entities: true
 - abuse_bot:
     use_entities: true
+- students_counsellingw:
+    use_entities: true
 entities:
 - club
 - name
@@ -152,13 +154,15 @@ slots:
 responses:
   utter_greet:
   - text: Hey! How can I help?
+  - text: Hey! How may I assist you?
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
-  - text: Please dont be sad, Smile suits on your face
+    text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - image: https://i.imgur.com/nGF1K8f.jpg
+  - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
+  - text: Cool, SeeYa !
   utter_positive:
   - text: Thanks ya, have a nice day :)
   utter_out_of_scope:
@@ -172,140 +176,146 @@ responses:
   - text: Bye
   - text: Goodbye!
   - text: Accha to hum chlte hai !
-  - text: Ciao!
+  - text: Alvidaa!
   - text: Bye, was nice talking to you!
   - text: Bye bye!
   utter_iamabot:
   - text: I am a Gabby, powered by Rasa.
   utter_telljoke:
   - text: Your life is a joke. Hahaha !
+  - text: JOKE!
   utter_admission_info:
-  - text: Thank you for showing intrest in ABESEC, you can proceed to https://www.abes.ac.in/admissions
-  - text: Let me have a look, click https://www.abes.ac.in/admissions/ for details
+  - text: Thank you for showing intrest in ABESEC, you can proceed to this [link](https://www.abes.ac.in/admissions)
+  - text: Let me have a look, click [here](https://www.abes.ac.in/admissions/) to get admission details
   utter_programs:
   - text: Here are the programs offered - B.Tech , M.tech , MBA , MCA
   - text: Under graduate courses include B.Tech and Post Graduate includes M.Tech, MCA and MBA
   utter_branch_info:
-  - text: You can get information here https://www.abes.ac.in/academics/b-tech/
+  - text: You can get information [here](https://www.abes.ac.in/academics/b-tech/)
   utter_eligibility_regular:
-  - text: Check here https://www.abes.ac.in/admissions/b-tech/eligibility/
+  - text: Check [here](https://www.abes.ac.in/admissions/b-tech/eligibility/) to check
   utter_eligibility_lateral:
-  - text: Check here https://www.abes.ac.in/admissions/b-tech/eligibility-lateral/
+  - text: Check [here](https://www.abes.ac.in/admissions/b-tech/eligibility-lateral/) to check
   utter_fee_info:
-  - text: Here is the fee info - https://www.abes.ac.in/fees-structure-2020/
+  - text: Click [here](https://www.abes.ac.in/fees-structure-2020/) to get details about fees.
   utter_hostel_info:
   - text: Exhilarated hostel facility is offered for students at ABES Engineering College with the capacity of 1500 students in boy’s hostels and 600 students in girl’s hostel with conducive and homely environment.
-  - text: ABESEC has separate hostels for girls and boys, click here for details https://www.abes.ac.in/admissions/accommodation/
+  - text: ABESEC has separate hostels for girls and boys, click for more [details](https://www.abes.ac.in/admissions/accommodation/)
   utter_forms:
-  - text: Sure !, you can find this form here -> https://www.abes.ac.in/about-us/notices-circulars/forms/
+  - text: Sure !, you can find this form here -> [forms](https://www.abes.ac.in/about-us/notices-circulars/forms/)
   utter_alumini:
-  - text: Welcome to out Alumini portal, for more details visit https://www.abes.ac.in/alumni/
+  - text: ABESEC Alumni Association (AAA) was founded in 2007 with the objective to promote and foster mutually beneficial interaction between the Alumni and the present students of the ABES Engineering College and between the Alumni themselves.[Know more](https://www.abes.ac.in/alumni/)
   utter_career:
-  - text: Thank you so much for showing your intrest in ABESEC, for jobs visit https://www.abes.ac.in/careers/
+  - text: Thank you so much for showing your intrest in ABESEC, for jobs visit [here](https://www.abes.ac.in/careers/)
   utter_students_counselling:
   - text: ABESEC has constituted Student Counseling Cell to look after the problems of students. Students can discuss their problem, of any nature with our counselor, Contact our counsellor Ms. Ankita Juneja (ankita.juneja@abes.ac.in)
   utter_antiragging:
-  - text: We are proud to inform that ABESEC is a Ragging free Institution, To know more about Antiragging cell go to https://www.abes.ac.in/lifeabes-ec/anti-ragging-cell/
+  - text: We are proud to inform that ABESEC is a Ragging free Institution, To know more about Antiragging cell go to this [link](https://www.abes.ac.in/lifeabes-ec/anti-ragging-cell/)
   utter_medical:
   - text: The institute runs a dispensary and has appointed a doctor who is available for consultation during institute hours on all working days from 10:30 am -01:30 pm. Contact Dr. R.K. Goel(0120-2845112)
-  - text: for Medical Assistance, visit https://www.abes.ac.in/lifeabes-ec/medical-services/
+  - text: for Medical Assistance, visit [here](https://www.abes.ac.in/lifeabes-ec/medical-services/)
   utter_brochure:
-  - text: You can download latest copy of brochure from https://www.abes.ac.in/wp-content/uploads/2020/12/ABES-Brochure-2020-21_1.pdf
+  - text: You can download latest copy of brochure from [here](https://www.abes.ac.in/wp-content/uploads/2020/12/ABES-Brochure-2020-21_1.pdf)
   utter_scholarship:
   - text: For any query related to scholarship you can contact to registrar office
-  - text: For scholarship details visit https://scholarship.up.gov.in/
+  - text: For scholarship details visit their official [website](https://scholarship.up.gov.in/)
   utter_top_company:
-  - text: Adobe, Amazon, Cisco, toppr and extramarks etc. are some of the top recruiter
+  - image: https://www.abes.ac.in/wp-content/uploads/2020/12/placement2.jpg
+    text: Adobe, Amazon, Cisco, toppr and extramarks etc. are some of the top recruiter
   utter_highest_package:
   - text: Adobe and Amazon provide highest package of 27 LPA and 27.7 LPA respectively.
   utter_mass_recruiter:
-  - text: Capgemini, Wipro, TCS, infosys and NEC etc. are the mass recruiter companies.
+  - image: https://www.abes.ac.in/wp-content/uploads/2020/12/placement3.jpg
+    text: Capgemini, Wipro, TCS, infosys and NEC etc. are the mass recruiter companies.
   utter_placement_record_btech:
-  - text: To check B.Tech Placement record click on this link https://www.abes.ac.in/admissions/b-tech/b-tech-placements/
-  - text: Let me have a look....here you go https://www.abes.ac.in/admissions/b-tech/b-tech-placements/
+  - text: To check B.Tech Placement record click on this [link](https://www.abes.ac.in/admissions/b-tech/b-tech-placements/)
+  - text: Let me have a look....here you [go](https://www.abes.ac.in/admissions/b-tech/b-tech-placements/)
   utter_placement_record_mba:
-  - text: To check MBA Placement record click on this link https://mba.abes.ac.in/placements/
-  - text: Let me have a look....here you go https://mba.abes.ac.in/placements/
+  - text: To check MBA Placement record click on this [link](https://mba.abes.ac.in/placements/)
+  - text: Let me have a look....here you [go](https://mba.abes.ac.in/placements/)
   utter_placement_record_mca:
-  - text: To check MCA Placement record click on this link https://www.abes.ac.in/academics/mca/mca-placements/
-  - text: Let me have a look....here you go https://www.abes.ac.in/academics/mca/mca-placements/
+  - text: To check MCA Placement record click on this [link](https://www.abes.ac.in/academics/mca/mca-placements/)
+  - text: Let me have a look....here you [go](https://www.abes.ac.in/academics/mca/mca-placements/)
   utter_why_abes_for_placement:
-  - text: You should choose ABES-EC because ABES-EC shines on the top in B.Tech Placements https://www.abes.ac.in/placement/btech/abes-advantage/
+  - text: You should choose ABES-EC because ABES-EC shines on the top in B.Tech Placements every year. [click here](https://www.abes.ac.in/placement/btech/abes-advantage/)
   utter_average_package:
   - text: Average package for B.tech is 3.50 LPA and for MBA it is 5.11 LPA :)
   utter_company_type:
-  - text: There are many types of companies but IT comapnies and marketing companies are main
+  - text: There are many types of companies but IT comapnies and marketing companies are main.
   utter_about_college:
-  - text: ABESEC is the leading institution in AKTU. Read more here https://www.abes.ac.in/about-us/
-  - text: ABESEC has achieved excellence in academics by consistently securing the First position for consecutively 8 semesters in University academic result. Read more... https://www.abes.ac.in/about-us/
+  - text: ABESEC is the leading institution in AKTU. Read more [here](https://www.abes.ac.in/about-us/)
+  - text: ABESEC has achieved excellence in academics by consistently securing the First position for consecutively 8 semesters in University academic result. [Read more...](https://www.abes.ac.in/about-us/)
   utter_where_is_abes:
   - text: Address of ABESEC --> ABES Engineering College 19th KM Stone, NH-09 Ghaziabad U.P.-201009, India
   utter_abes_sports:
-  - text: ABESEC has rich culture of sports. You can see details here https://www.abes.ac.in/lifeabes-ec/sports-facilities-at-abesec/
-  - text: ABESEC boasts of superior infrastructure for sports and actively creates opportunities for students to take an active part in sports competitions. Click for more https://www.abes.ac.in/lifeabes-ec/sports-facilities-at-abesec/
+  - text: ABESEC has rich culture of sports. You can see details [here](https://www.abes.ac.in/lifeabes-ec/sports-facilities-at-abesec/)
+  - text: ABESEC boasts of superior infrastructure for sports and actively creates opportunities for students to take an active part in sports competitions. Click for [more info](https://www.abes.ac.in/lifeabes-ec/sports-facilities-at-abesec/)
   utter_ted:
-  - text: ABESEC had organised a TEDxABESEC in 2019, here are some glimpse https://www.ted.com/tedx/events/32962
-  - text: ABESEC had organised a TEDxABESEC in 2019, have a look of TEDxABESEC brochure https://www.abes.ac.in/wp-content/uploads/2019/03/TedxABESEC-Brochure.pdf
+  - text: ABESEC had organised a TEDxABESEC in 2019, here are some [glimpse](https://www.ted.com/tedx/events/32962)
+  - text: ABESEC had organised a TEDxABESEC in 2019, have a look of TEDxABESEC [brochure](https://www.abes.ac.in/wp-content/uploads/2019/03/TedxABESEC-Brochure.pdf)
   utter_genero:
-  - text: GENERO is a techno-cultural annual fest of ABES engineering college. click here to visit instagram https://www.instagram.com/genero.abesec/?hl=en
+  - text: GENERO is a techno-cultural annual fest of ABES engineering college. click [here](https://www.instagram.com/genero.abesec/?hl=en) to visit instagram page.
   utter_library:
-  - text: The library is the spinal column and the soul of ABES Engineering College and carries a vigorous role in teaching, training, research, and development. visit http://library.abes.ac.in/ for more
-  - text: ABESEC has well-planned full automation library that is equipped with latest books and journals on Technology, Management, Economic and Business related area. visit http://library.abes.ac.in/ for more
+  - text: The library is the spinal column and the soul of ABES Engineering College and carries a vigorous role in teaching, training, research, and development. [visit here](http://library.abes.ac.in/) for more
+  - text: ABESEC has well-planned full automation library that is equipped with latest books and journals on Technology, Management, Economic and Business related area. [visit here](http://library.abes.ac.in/) for more
   utter_huhc:
-  - text: Help Us to Help the Child is a non-profit organization working passionately to provide education to the unprivileged section of society. for details click here https://www.abes.ac.in/huhc/
+  - text: Help Us to Help the Child is a non-profit organization working passionately to provide education to the unprivileged section of society. for details click [here](https://www.abes.ac.in/huhc/)
   utter_canteen:
   - text: For the refreshment of students & staff, canteen facilities are made available both in college and hostels.
   - text: canteens are Tea man’s cafe- Ground floor, Mother Dairy outlet- AryaBhatta Block, Nescafe Coffee counter- Front lawn Bhabha block, Kalptaru-Ist flr Vishwakarma Block, Night canteen-hostel, Indian Juice corner- Front lawn
   utter_occasion:
-  - text: Some of the latest announcement, print media and college happenings are as follows https://www.abes.ac.in/occasions/
+  - text: For some of the latest announcement, print media and college happenings [click here](https://www.abes.ac.in/occasions/)
   utter_clubs:
-  - text: ABESEC has a rich culture of clubs and society to promote student participation in curricular activities. To know more about click https://www.abes.ac.in/lifeabes-ec/student-clubs/ here
+  - text: ABESEC has a rich culture of clubs and society to promote student participation in curricular activities. To know more about click [here](https://www.abes.ac.in/lifeabes-ec/student-clubs/)
   utter_infrastr:
-  - text: ABESEC has the best infrastructure facilities available for students including a serene external environment through thoughtful landscaping efforts. for more details visit https://www.abes.ac.in/details-of-classroom-tutorial-room-seminar-hall-department-library-cetl/
+  - text: ABESEC has the best infrastructure facilities available for students including a serene external environment through thoughtful landscaping efforts. for more details visit [here](https://www.abes.ac.in/details-of-classroom-tutorial-room-seminar-hall-department-library-cetl/)
   utter_labs:
-  - text: ABESEC has Curriculum Labs & Centres of Excellence for every domain. Check this https://www.abes.ac.in/details-of-curriculum-labs-centres-of-excellence/
+  - text: ABESEC has Curriculum Labs & Centres of Excellence for every domain. Check [this](https://www.abes.ac.in/details-of-curriculum-labs-centres-of-excellence/)
   utter_photos:
-  - text: To get Geotagged Photographs of Classrooms, Tutorial Rooms, Seminar Halls etc. Click here https://www.abes.ac.in/life-at-abesec/academic-infrastructure/geotagged/
+  - text: To get Geotagged Photographs of Classrooms, Tutorial Rooms, Seminar Halls etc. Click [here](https://www.abes.ac.in/life-at-abesec/academic-infrastructure/geotagged/)
   utter_lakshya:
-  - text: Lakshya Officer’s Defence Academy is being established in ABESEC with the aim of imparting pre selection coaching for SSB interview to candidates aspiring to join Armed Forces as an officer. For more https://www.abes.ac.in/lifeabes-ec/lakshya-officers-defence-academy/
+  - text: Lakshya Officer’s Defence Academy is being established in ABESEC with the aim of imparting pre selection coaching for SSB interview to candidates aspiring to join Armed Forces as an officer. For more details click [here](https://www.abes.ac.in/lifeabes-ec/lakshya-officers-defence-academy/)
   utter_virtual_tour:
-  - text: To take virtual tour of ABESEC click here https://www.seeinside.link/catalog/721b2af1d50e4704b30e/ABES-Engineering-College.html
+  - text: To take virtual tour of ABESEC click [here](https://www.seeinside.link/catalog/721b2af1d50e4704b30e/ABES-Engineering-College.html)
   utter_academic_calender:
-  - text: For any yearwise or semester wise calender visit https://www.abes.ac.in/academic-calendar/
+  - text: For any yearwise or semester wise calender, you can download it from [here](https://www.abes.ac.in/academic-calendar/)
   utter_iqaf:
-  - text: The Internal Quality Assurance Cell (IQAC) of ABESEC was established in 2014 with a motive to engrain quality culture in the Institution. For complete details click here https://www.abes.ac.in/iqac/
+  - text: The Internal Quality Assurance Cell (IQAC) of ABESEC was established in 2014 with a motive to engrain quality culture in the Institution. For complete details click [here](https://www.abes.ac.in/iqac/)
   utter_nirf:
-  - text: The National Institutional Ranking Framework (NIRF) was approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015. click here for more details https://www.abes.ac.in/nirf/
+  - text: The National Institutional Ranking Framework (NIRF) was approved by the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015. click [here](https://www.abes.ac.in/nirf/) for more details
   utter_nptel:
-  - text: SWAYAM NPTEL is a programme initiated by Government of India. The objective of this effort is to take the best teaching learning resources to all. click here for more details https://www.abes.ac.in/swayam-nptel/
-  - text: To look for NPTEL Certifications visit https://www.abes.ac.in/academics/departments/under-graduate/mechanical-engineering/nptel/
+  - text: SWAYAM NPTEL is a programme initiated by Government of India. The objective of this effort is to take the best teaching learning resources to all. click [here](https://www.abes.ac.in/swayam-nptel/) for more details
+  - text: To look for NPTEL Certifications visit [here](https://www.abes.ac.in/academics/departments/under-graduate/mechanical-engineering/nptel/)
   utter_cetl:
-  - text: The Centre of Excellence for Teaching and Learning (CETL), was established to enhance the quality of teaching of the faculty at ABES Engineering College. Visit https://www.abes.ac.in/innovations/cetl-e-learning/ for details
+  - text: The Centre of Excellence for Teaching and Learning (CETL), was established to enhance the quality of teaching of the faculty at ABES Engineering College. Visit [here](https://www.abes.ac.in/innovations/cetl-e-learning/) for details
   utter_hr_portal:
-  - text: Click https://abesec.greythr.com/uas/portal/auth/logout to visit HR portal
+  - text: Click [this](https://abesec.greythr.com/uas/portal/auth/logout) to visit HR portal
   utter_publication:
-  - text: To see ABESEC Publication Repository, click https://www.abes.ac.in/publication.abes.ac.in/
+  - text: To see ABESEC Publication Repository, click [here](https://www.abes.ac.in/publication.abes.ac.in/)
   utter_sim:
-  - text: Click http://abesec.servergi.com:8091/isimabesec/login to access SIM portal
+  - text: Click [here](http://abesec.servergi.com:8091/isimabesec/login) to access SIM portal
   utter_contactus:
-  - text: For contact details, visit https://www.abes.ac.in/contact-us/
-  - text: Click https://www.abes.ac.in/ and scroll to bottom to get contact details and social media links
+  - text: For contact details, click [here](https://www.abes.ac.in/contact-us/) to visit contact page
+  - text: Click [this](https://www.abes.ac.in/) and scroll to bottom to get contact details and social media links
   utter_innovation:
-  - text: Click https://www.abes.ac.in/innovations/ to visit innovation
+  - text: Click [here](https://www.abes.ac.in/innovations/) to have a look at innovations at ABESEC
   utter_father:
   - text: I'm Gabby created by Shrusty, Shreya, Pratyusha and Prashant :P
   utter_ask_anything_else:
   - text: No worries. Let me know if there is anything else I can help you with
   - text: No problem, anything else I can help with?
-  - text: Happy to serve you {userName}, do you want me to do anything else?
+  - text: Happy to serve you buddy, do you want me to do anything else?
   - text: No worries. Is there anything else I can help you with?
   utter_abuse_reply:
   - text: Hey! that's not fair
   - text: Please, I have feelings too!
+  - text: Please, Tameez mein !
   - text: If you don't stop this, I've to report you!
   - text: If you don't stop this, I'll block you!!
   - text: Don't talk to me like that!
   - text: that's not very nice
+  utter_reply_why_abuse:
+  - text: You are using bad words! Shame on you!
 actions:
 - action_clubs
 forms: {}

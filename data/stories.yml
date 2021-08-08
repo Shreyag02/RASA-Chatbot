@@ -535,12 +535,6 @@ stories:
   - intent: father
   - action: utter_father
 
-- story: my creater (abuse path)
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: abuse_bot
-  - action: utter_abuse_reply
 
 - story: abuse path 1
   steps:
@@ -554,8 +548,25 @@ stories:
   - intent: abuse_bot
   - action: utter_abuse_reply
 
+- story: abuse path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abuse_bot
+  - action: utter_abuse_reply
+  - intent: ask_abuse_reply
+  - action: utter_reply_why_abuse
+  - intent: regret_abuse_reply
+  - action: utter_happy
 
-
+- story: abuse path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abuse_bot
+  - action: utter_abuse_reply
+  - intent: regret_abuse_reply
+  - action: utter_happy
 
 
 
